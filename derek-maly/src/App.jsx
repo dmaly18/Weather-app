@@ -3,12 +3,13 @@ import Inputs from "./components/Inputs";
 import TempAndDetails from "./components/TempAndDetails";
 import TimeAndLocation from "./components/TimeAndLocation";
 import TopButtons from "./components/TopButtons";
-import getWeatherData from "./services/weatherService";
+import getFormattedWeatherData from "./services/weatherService";
+
 
 const App = () => {
 
   const getWeather = async () => {
-    const data = await getWeatherData('weather', {q: 'berlin'})
+    const data = await getFormattedWeatherData({q: 'ahmedabad'})
     console.log(data);
   }
 
