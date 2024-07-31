@@ -1,2 +1,2 @@
 # Weather App
-This is a simple weather application
+This is a simple weather application built
